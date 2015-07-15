@@ -1,0 +1,5 @@
+/Users/rolandobernal/Documents/Back-End/code/Cheers/cheers/csharp/Cheers/Cheers/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/rolandobernal/Documents/Back-End/code/Cheers/cheers/csharp/Cheers/Cheers/bin/Debug/Cheers.exe.mdb
+/Users/rolandobernal/Documents/Back-End/code/Cheers/cheers/csharp/Cheers/Cheers/bin/Debug/Cheers.exe
+/Users/rolandobernal/Documents/Back-End/code/Cheers/cheers/csharp/Cheers/Cheers/obj/x86/Debug/Cheers.exe
+/Users/rolandobernal/Documents/Back-End/code/Cheers/cheers/csharp/Cheers/Cheers/obj/x86/Debug/Cheers.exe.mdb
