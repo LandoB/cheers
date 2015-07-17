@@ -4,6 +4,13 @@ namespace Cheers
 {
 	class MyMainClass
 	{
+
+		public static string daysBeforeBday(int diff)
+		{
+			return (diff < 0) ? (Math.Abs(diff).ToString()) : (365 - diff).ToString();
+		}
+
+
 		public static void Main (string[] args)
 		{
 			string cheering; // It will determine if we need "a" or "an"
@@ -18,6 +25,20 @@ namespace Cheers
 			string name = Console.ReadLine();
 			name = name.ToLower();
 
+			// We ask the user for their birthday
+			Console.Write("Now, type your birthday (MM/DD): ");
+			string bday = Console.ReadLine();
+			Console.WriteLine();
+
+			// Let's parse string into month and day
+			string[] monthDay = bday.Split('/');
+
+			// Now we create a DateTime object for birthday
+			DateTime birthday = new DateTime(DateTime.Today.Year, int.Parse(monthDay[0]), int.Parse(monthDay[1]));
+
+			// We calculate the difference between today and next birthday
+			int diff = DateTime.Today.Subtract(birthday).Days;
+
 			// Then, print out the cheering
 			// for each character in the name
 			// And we also compare it with our array of "an" characters
@@ -31,8 +52,12 @@ namespace Cheers
 				Console.WriteLine("Give me {0}..{1}", cheering, name[i]);
 			}
 
+
 			// Finally, print out the line with name in all uppercase
 			Console.WriteLine("{0} is.. GRANDIOSO!!!", name.ToUpper());
+
+			Console.WriteLine( (diff == 0) ? "It's your birthday... Happy Birthday!!" : 
+				"Your birthday is {0} days away.", daysBeforeBday(diff) );
 
 			Console.ReadLine();
 		}
