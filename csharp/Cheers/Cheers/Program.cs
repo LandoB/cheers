@@ -17,7 +17,7 @@ namespace Cheers
 			// We are capturing the array of characters that usually use "an" 
 			// then we will compare them with the characters of the name
 			// if it is one of them, then we'll use "an"
-			char[] an_characters = new char[13] { 'a', 'e', 'i', 'o', 'u', 'f', 'h', 'l', 'm', 'n', 'r', 's', 'x' }; 
+			char[] an_characters = new char[12] { 'a', 'e', 'i', 'o', 'f', 'h', 'l', 'm', 'n', 'r', 's', 'x' }; 
 																	 
 
 			// We now ask the user to type a name
