@@ -21,26 +21,24 @@ namespace Cheers
 																	 
 
 			// We now ask the user to type a name
-			Console.Write("Please type your name: ");
-			string name = Console.ReadLine();
-			name = name.ToLower();
+			Console.Write ("Please type your name: ");
+			string name = Console.ReadLine ();
+			name = name.ToLower ();
 
 			// We ask the user for their birthday
-			Console.Write("Now, type your birthday (MM/DD): ");
-			string bday = Console.ReadLine();
-			Console.WriteLine();
+			Console.Write ("Now, type your birthday (MM/DD): ");
+			string bday = Console.ReadLine ();
+			Console.WriteLine ();
 
 			// Let's parse string into month and day
-			string[] monthDay = bday.Split('/');
+			string[] monthDay = bday.Split ('/');
 
 			// Now we create a DateTime object for birthday
-			DateTime birthday = new DateTime(DateTime.Today.Year, int.Parse(monthDay[0]), int.Parse(monthDay[1]));
+			DateTime birthday = new DateTime (DateTime.Today.Year, int.Parse (monthDay [0]), int.Parse (monthDay [1]));
 
 			// We calculate the difference between today and next birthday
-			int diff = DateTime.Today.Subtract(birthday).Days;
-//			if (diff > 300) {
-//				var bdayMessage = "I'm sorry we missed your birthday!";
-//			}
+			int diff = DateTime.Today.Subtract (birthday).Days;
+
 
 			// Then, print out the cheering
 			// for each character in the name
@@ -48,26 +46,33 @@ namespace Cheers
 			// to see if we need "a" or "an" 
 			// then print out the line for the appropriate cheering
 
-			foreach (var letter in name )
-			{
+			foreach (var letter in name) {
 				// Check to see if the character is a "an" character or not
-				cheering = an_characters.IndexOf(letter) < 0 ? "a" : "an";
-				Console.WriteLine("Give me {0}..{1}", cheering, letter);
+				cheering = an_characters.IndexOf (letter) < 0 ? "a" : "an";
+				Console.WriteLine ("Give me {0}..{1}", cheering, letter);
 			}
 
 			Console.WriteLine (); // I just need a blank space here
 
 			// Finally, print out the line with name in all uppercase
-			Console.WriteLine("{0} is.. GRANDIOSO!!!", name.ToUpper());
+			Console.WriteLine ("{0} is.. GRANDIOSO!!!", name.ToUpper ());
 			Console.WriteLine (); // I just need a blank space here
 
-			Console.WriteLine( (diff == 0) ? "It's your birthday... Happy Birthday!!" : 
-				"Your birthday is {0} days away.", daysBeforeBday(diff) );
-
-			Console.ReadLine();
+			if (diff > 300) {
+				var bdayMessage = "I'm sorry we missed your birthday!";
+				Console.WriteLine (bdayMessage);
+			} else {
+				if (diff == 0) {
+					Console.WriteLine ("It's your birthday... Happy Birthday!!");
+				} else {
+				}
+					Console.WriteLine ("Your birthday is {0} days away.", daysBeforeBday (diff));
+				}
+			}
+			//Console.ReadLine();
 		}
 	}
-}
+
 
 
 
