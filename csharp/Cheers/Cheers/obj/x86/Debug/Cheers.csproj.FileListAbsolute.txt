@@ -1,0 +1,5 @@
+C:\Users\bernalr\Documents\GitHub\cheers\csharp\Cheers\Cheers\obj\x86\Debug\Cheers.exe
+C:\Users\bernalr\Documents\GitHub\cheers\csharp\Cheers\Cheers\bin\Debug\Cheers.exe
+C:\Users\bernalr\Documents\GitHub\cheers\csharp\Cheers\Cheers\bin\Debug\Cheers.pdb
+C:\Users\bernalr\Documents\GitHub\cheers\csharp\Cheers\Cheers\obj\x86\Debug\Cheers.csprojResolveAssemblyReference.cache
+C:\Users\bernalr\Documents\GitHub\cheers\csharp\Cheers\Cheers\obj\x86\Debug\Cheers.pdb

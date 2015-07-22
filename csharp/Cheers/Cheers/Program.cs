@@ -59,8 +59,7 @@ namespace Cheers
 			Console.WriteLine (); // I just need a blank space here
 
 			if (diff > 300) {
-				var bdayMessage = "I'm sorry we missed your birthday!";
-				Console.WriteLine (bdayMessage);
+				Console.WriteLine ("I'm sorry we missed your birthday!");
 			} else {
 				if (diff == 0) {
 					Console.WriteLine ("It's your birthday... Happy Birthday!!");
